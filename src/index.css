@@ -18,13 +18,13 @@
   }
 
   ::selection {
-    background-color: #1823f5;
+    background-color: #F5C518;
     color: #0A0A0A;
   }
 
   ::-webkit-scrollbar { width: 5px; }
   ::-webkit-scrollbar-track { background: #0A0A0A; }
-  ::-webkit-scrollbar-thumb { background: #1823f5; border-radius: 2px; }
+  ::-webkit-scrollbar-thumb { background: #F5C518; border-radius: 2px; }
 }
 
 /* ─── Scroll-triggered animation classes ─── */
@@ -62,7 +62,7 @@
   .stripe-yellow {
     background: repeating-linear-gradient(
       -45deg,
-      #1823f5 0px, #1823f5 14px,
+      #F5C518 0px, #F5C518 14px,
       #0A0A0A 14px, #0A0A0A 28px
     );
   }
