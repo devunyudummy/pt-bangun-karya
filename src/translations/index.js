@@ -18,7 +18,7 @@ export const translations = {
       sub: 'PT. Bangun Karya adalah mitra konstruksi profesional yang menghadirkan kualitas terbaik dalam setiap proyek — dari fondasi hingga puncak gedung.',
       cta: 'Lihat Portofolio',
       ctaSecondary: 'Hubungi Kami',
-      scroll: 'Gulir ke bawah',
+      scroll: 'Scroll ke bawah',
       badge: 'Tahun Pengalaman',
     },
 

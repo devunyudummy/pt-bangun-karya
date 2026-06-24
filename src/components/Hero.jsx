@@ -1,4 +1,5 @@
 import { useLanguage } from '../context/LanguageContext'
+import  heroImage from '../assets/images/hero.webp'
 
 const scrollTo = id => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
 
@@ -29,21 +30,22 @@ export default function Hero() {
       <div className="absolute inset-0 stripe-subtle pointer-events-none" />
 
       {/* Ambient yellow glow — bottom-left */}
-      <div className="absolute -bottom-32 -left-32 w-96 h-96 rounded-full
+      <div className="absolute -bottom-32 -left-32 w-2/5 h-3/5 rounded-full
                       bg-primary-500/10 blur-[96px] pointer-events-none" />
 
       {/* Right-side image column — bleeds off-screen, partially visible */}
       <div className="absolute inset-y-0 right-0 w-full lg:w-[48%] pointer-events-none">
-        <ImgPlaceholder label="Foto Proyek / Hero" size="1200 × 900 px" ratio="h-full w-full" className="!aspect-auto" />
+        <img src={heroImage} alt="Hero" className="h-full w-full object-cover object-center" />
+        {/* <ImgPlaceholder label="Foto Proyek / Hero" size="1200 × 900 px" ratio="h-full w-full" className="!aspect-auto" /> */}
         {/* gradient overlay fades image into dark bg */}
         <div className="absolute inset-0 bg-gradient-to-r from-coal-900 via-coal-900/70 to-coal-900/10" />
         {/* top & bottom fades */}
-        <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-coal-900 to-transparent" />
-        <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-coal-900 to-transparent" />
+        {/* <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-coal-900 to-transparent" />
+        <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-coal-900 to-transparent" /> */}
       </div>
 
       {/* Warning-tape strip — right edge decoration */}
-      <div className="absolute top-0 right-0 w-16 md:w-20 h-full stripe-yellow opacity-[0.07] pointer-events-none" />
+      {/* <div className="absolute top-0 right-0 w-16 md:w-20 h-full stripe-yellow opacity-[0.07] pointer-events-none" /> */}
 
       {/* ── Main content ── */}
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-28 pb-24 lg:pt-36 lg:pb-32">
@@ -63,7 +65,7 @@ export default function Hero() {
             <span className="hero-3 block text-[clamp(3rem,10vw,8rem)] text-primary-500">
               {t('hero.line2')}
             </span>
-            <span className="hero-4 block text-[clamp(3rem,10vw,8rem)] text-white/[0.08] select-none">
+            <span className="hero-4 block text-[clamp(3rem,10vw,8rem)] text-white/[0.75] select-none">
               {t('hero.line3')}
             </span>
           </h1>
